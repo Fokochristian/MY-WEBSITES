@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Foko christian">
+    <meta name="description" content="My Portfolio Website">
+    <link rel="stylesheet" href="style.css">
+    <title>My portfolio Website</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav container">
+            <h1 class="nav__h1 nowrap">FOKO Christian</h1>
+            <ul class="nav__ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero container" id="home">
+        <div class="hero__text">
+            <h2 class="nowrap">Hi, I'm <span>FOKO Christian</span></h2>
+            <p>Frontend Developer | Creating clean, modern web experiences</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero__image">
+            <figure>
+                <img src="img/good.jpg" alt="Photo of Foko" loading="lazy">
+                <figcaption class="offscreen">Foko Christian</figcaption>
+            </figure>
+            
+        </div>
+    </section>
+
+    <main>
+        <article id="about" class="article container">
+            <div class="article__image">
+               <figure>
+                <img src="img/one.jpg" alt="Foko Christian" loading="lazy" >
+                <figcaption class="offscreen">Foko christian</figcaption>
+               </figure>
+            </div>
+            <div class="article__text">
+                <h2>About Me</h2>
+                <p>I'm a passionate Frontend Developer who loves coding, music, video games, and food. I enjoy turning ideas into real digital experiences and learning new tools every day</p>
+                <h3>Skills</h3>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>PYTHON</li>
+                </ul>
+            </div>
+        </article>
+
+        <section class="projects container" id="projects">
+            <h2>Projects</h2>
+            <div class="project__grid">
+                <div class="card">
+                    <h3>To Do List</h3>
+                    <p>A python-based To-Do app that allows you to add, remove, and edit tasks.</p>
+                    <div class="card__buttons">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="https://github.com/Fokochristian/Python_projects/blob/main/To%20do%20list.py" class="btn btn-outline">View Code</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Rock, Paper, Scissors</h3>
+                    <p>A simple game where you play against the computer - made with python.</p>
+                    <div class="card__buttons">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="https://github.com/Fokochristian/Python_projects/blob/main/Rock%2CPaper%2CScissors.py" class="btn btn-outline">View Code</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Calculator</h3>
+                    <p>A python-based calculator that performs basic math operations.</p>
+                    <div class="card__buttons">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="https://github.com/Fokochristian/Python_projects/blob/main/Simple%20calculator.py" class="btn btn-outline">View Code</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact Me</h2>
+            <form action="https:://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send Me a Message</legend>
+                    <p class="contact__p">
+                        <label for="name" class="contact__label">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your Name" required class="contact__input">
+                    </p>
+                    <p class="contact__p">
+                        <label for="email" class="contact__label">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required class="contact__input">
+                    </p>
+                    <p class="contact__p">
+                        <label for="message" class="contact__label">Your message:</label>
+                        <br>
+                        <textarea name="message" id="message" rows="8" placeholder="Your Message" required class="contact__textarea"></textarea>
+                    </p>
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="reset" class="btn btn-outline">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; Copyright 2025 FOKO Christian. <span> All rights reserved</span></p>
+        </footer>
+    </main>
+</body>
+</html>
